@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="zoom">
+        <img src="./img/mountain1.png" id="layer1" alt="png">
+        <img src="./img/mountain2.png" id="layer2" alt="png">
+        <img src="./img/montuan3.png" id="layer3" alt="png">
+        <h1 id="text">tempiltin</h1>
+    </section>
+    <section class="content">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, consectetur. Praesentium molestiae temporibus
+            voluptate adipisci quis voluptatibus fuga amet dolor! Quibusdam vero enim laboriosam ducimus, consequuntur
+            commodi veritatis facilis labore aut non laborum in maiores velit illo recusandae voluptates tempora dolore,
+            accusantium consequatur facere numquam architecto omnis? Debitis ipsam recusandae aliquam quia iste, quasi
+            dicta error, eligendi voluptatem minima dolorem beatae sint consectetur, hic doloribus harum voluptatibus.
+            Neque praesentium assumenda et beatae asperiores quod repellat doloribus ducimus nulla maiores tenetur rem
+            atque, necessitatibus inventore laudantium ullam dolor distinctio porro officiis natus alias voluptates.
+            Earum numquam omnis quas ratione officiis adipisci?</h2>
+    </section>
+   
+    <script>
+        var layer2 = document.getElementById('layer2')
+
+        scroll = window.pageXOffset;
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageXOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+        });
+    </script>
+</body>
+
+</html>
